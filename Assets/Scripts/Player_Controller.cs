@@ -18,7 +18,6 @@ public class Player_Controller : MonoBehaviour {
 
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 		Vector3 rotation = new Vector3 (0f, rotate, 0f);
-		Debug.Log ("Code Reached Here!");
 		rb.AddTorque (rotation * speed);
 		rb.AddForce (movement * speed);
 	}

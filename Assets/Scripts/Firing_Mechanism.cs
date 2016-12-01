@@ -15,7 +15,7 @@ public class Firing_Mechanism : MonoBehaviour {
 			float xPos = GameObject.Find ("Player").transform.position.x;
 			float zPos = GameObject.Find ("Player").transform.position.z;
 			float yPos = GameObject.Find ("Player").transform.position.y;
-			GameObject.Instantiate (projectile, new Vector3(xPos + 1.5f, yPos + 4f, zPos), Quaternion.identity);
+			GameObject.Instantiate (projectile, new Vector3(xPos, yPos + 3f, zPos), Quaternion.identity);
 		}
 	}
 }
